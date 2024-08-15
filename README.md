@@ -5,8 +5,8 @@ A Python-based script that collects free proxies from various sources, checks th
 #### Stack:
 
 - [Python](https://www.python.org/downloads/)
-- [Requests](https://docs.python-requests.org/en/latest/)
-- [urllib3](https://pypi.org/project/urllib3/)
+- [aiohttp](https://docs.aiohttp.org/)
+- [Requests](https://docs.python-requests.org/)
 - [fake_useragent](https://pypi.org/project/fake-useragent/)
 - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
 - [lxml](https://pypi.org/project/lxml/)
@@ -29,9 +29,15 @@ All actions should be executed from the source directory of the project and only
 
 3. Run the script:
    ```bash
-   python main.py 
+   python main.py [-upb] [limit=<number>]
    ```
+
+   - `-upb`: Update the proxy list by fetching fresh proxies from the sources.
+   - `limit=<number>`: Limit the number of valid proxies returned.
 
 ## Output
 
-The script will generate a text file containing a list of working proxies in the same directory.
+The script will generate two text files in the same directory:
+
+   - `proxy.txt`: A list of all collected proxies.
+   - `valid_proxies.txt`: A list of working proxies that passed all checks.
