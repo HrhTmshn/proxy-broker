@@ -1,5 +1,19 @@
 # Changelog
 
+## [v_0.2.0] - 2025-05-10
+### Changed
+- Project structure was refactored: logic moved to `core.py` inside a new `proxybroker` package, and entry point created as `main.py`.
+- Replaced positional args with argparse-based CLI, supporting multiple new flags.
+- Introduced throttling logic with `queue_quota` and `coeff_delay` to manage validation rate.
+
+### Fixed
+- Proper timeout and exception handling added using `asyncio.TimeoutError` and `aiohttp.ClientError`.
+
+### Improved
+- Refined header-checking mechanism with a set of forbidden keys.
+- Improved printed output with `colorama` for better visibility in terminal.
+- Now prints execution time and clearly indicates where output files are saved.
+
 ## [v_0.1.0] - 2024-08-15
 ### Added
 - Implemented asynchronous proxy validation using aiohttp, significantly improving the speed of proxy checking.
