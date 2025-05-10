@@ -1,5 +1,9 @@
 # Changelog
 
+## [v_0.2.1] - 2025-05-10
+### Added
+- Added `LICENSE` file with a custom "Portfolio Only" license
+
 ## [v_0.2.0] - 2025-05-10
 ### Changed
 - Project structure was refactored: logic moved to `core.py` inside a new `proxybroker` package, and entry point created as `main.py`.

@@ -46,3 +46,10 @@ Two text files will be created in the current directory:
 
    - `proxy.txt`: List of all collected proxies.
    - `valid_proxies.txt`: Proxies that passed all validation checks (IP masking + no bad headers).
+   
+## License
+
+This project is licensed for **educational and portfolio review purposes only**.  
+Commercial or personal use, distribution, or modification is **not permitted**.
+
+See the [LICENSE](./LICENSE) file for more details.
